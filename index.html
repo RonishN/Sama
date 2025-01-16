@@ -1,155 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blissful Memories Photography</title>
-    <link rel="icon" href="images/first.png" type="image/icon type">
-    <link rel="stylesheet" href="code/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
     <!-- Header -->
-     <head><center>
-        <h1 class="display-4"> Blissful Memories Photography</h1>
-            <p class="lead">Capturing moments that last forever</p>
-    </center> </head>
-    <header class="bg-light py-3 sticky-top">
-        <div class="container text-center">
-            <!-- <h1 class="display-4">Blissful Memories Photography</h1>
-            <p class="lead">Capturing moments that last forever</p> -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#skills">Skills & Experience</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
+    <header class="sticky-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blissful Memories</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html" >Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html" >Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html" >Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html" >Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html" >Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center mb-4">Portfolio</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="images/wedding.png" class="img-fluid" alt="Wedding Photography">
-                    <p class="text-center mt-2">Wedding Photography</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/Portrait.png" class="img-fluid" alt="Portrait Photography">
-                    <p class="text-center mt-2">Portrait Photography</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/event.png" class="img-fluid" alt="Event Photography">
-                    <p class="text-center mt-2">Event Photography</p>
-                </div>
-            </div>
-        </div>
-    </section>
- <!-- gallery Section -->
-    <section id="gallery" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Gallery</h2>
-            <div class="row">
-                <!-- Initially visible images -->
-                <div class="col-md-3">
-                    <img src="images/first.png" class="img-fluid" alt="Gallery Image">
-                </div>
-                <div class="col-md-3">
-                    <img src="images/first.png" class="img-fluid" alt="Gallery Image">
-                </div>
-                <div class="col-md-3">
-                    <img src="images/first.png" class="img-fluid" alt="Gallery Image">
-                </div>
-                <div class="col-md-3">
-                    <img src="images/first.png" class="img-fluid" alt="Gallery Image">
-                </div>
-            </div>
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Welcome to Blissful Memories Photography</h1>
+        <p class="text-center lead mb-5">Capturing moments that last forever</p>
+        
+        <!-- Importance of Photography -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">The Power of Photography</h2>
+            <p style="text-align: justify;">
+                Photography is more than just capturing images; it’s an art form, a storytelling medium, and a time capsule. 
+                Since its invention in the 19th century, photography has revolutionized the way we document our lives and preserve our history. 
+                It has become a cultural cornerstone, helping us understand our past, celebrate our present, and dream about our future.
+            </p>
+            <p style="text-align: justify;">
+                Historically, photography has played a pivotal role in documenting world-changing events—from the first daguerreotype portraits to iconic images of cultural movements. 
+                It allows us to see and remember the faces of loved ones, the landscapes we cherish, and the milestones that shape our lives. 
+                Culturally, photography has bridged gaps between communities, showcasing diversity, traditions, and the unique beauty of different regions.
+            </p>
+            <p style="text-align: justify;">
+                On a personal level, photographs are tangible memories—moments frozen in time that we can revisit. Whether it’s a child’s first steps, 
+                a couple’s wedding vows, or a fleeting moment of joy during a celebration, photography ensures that no precious memory is ever lost.
+            </p>
+        </section>
     
-            <!-- Hidden images initially -->
-            <div class="row additional-gallery d-none">
-                <div class="col-md-3">
-                    <img src="images/second.png" class="img-fluid" alt="Gallery Image">
-                </div>
-                <div class="col-md-3">
-                    <img src="images/second.png" class="img-fluid" alt="Gallery Image">
-                </div>
-                <div class="col-md-3">
-                    <img src="images/second.png" class="img-fluid" alt="Gallery Image">
-                </div>
-                <div class="col-md-3">
-                    <img src="images/second.png" class="img-fluid" alt="Gallery Image">
-                </div>
-            </div>
-    
-            <!-- See More / See Less Button -->
-            <div class="text-center mt-4">
-                <button id="toggle-gallery" class="btn btn-primary">See More</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills and Experience Section -->
-    <section id="skills" class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center mb-4">Skills & Experience</h2>
-            <ul>
-                <li>10+ years of experience in wedding and event photography</li>
-                <li>Recipient of the "Best Photographer" award (2023)</li>
-                <li>Expert in portrait and candid photography</li>
+        <!-- About the Project -->
+        <section>
+            <h2 class="text-center mb-4">About This Project</h2>
+            <p style="text-align: justify;">
+                Blissful Memories Photography is not just a website—it’s a gateway to the art of preserving emotions, milestones, and memories through a lens. 
+                This platform is designed to showcase the talent and dedication of a team of professional photographers who bring life to every moment they capture.
+            </p>
+            <p style="text-align: justify;">
+                The website serves as a portfolio of our work, a gallery of stunning visuals, and a space where you can learn about our skills and expertise. 
+                Each section is thoughtfully crafted to provide visitors with a seamless experience:
+            </p>
+            <ul class="mb-4" style="list-style-type: none; padding: 0; text-align: justify;">
+                <li><strong>Portfolio:</strong> Discover our wide range of photography styles, from wedding photography to creative conceptual shoots.</li>
+                <li><strong>Gallery:</strong> A curated collection of breathtaking images that highlight our passion for capturing beauty and emotion.</li>
+                <li><strong>Skills & Experience:</strong> Learn about our journey, accolades, and the techniques that make our work stand out.</li>
+                <li><strong>Contact:</strong> Get in touch with us for bookings, inquiries, or collaborations.</li>
             </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <form action="submit_contact.php" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </section>
-<!-- Back to Top Button -->
-<!-- <button id="back-to-top" class="btn btn-primary rounded-circle" title="Back to Top">
-    <img src="images/event.png" alt="Back to Top" class="back-to-top-img">
-</button> -->
-
-
+            <p style="text-align: justify;">
+                Whether you’re here to relive your most cherished memories or to plan your next big event, Blissful Memories Photography is dedicated to 
+                ensuring that every moment is captured with creativity, care, and precision.
+            </p>
+        </section>
+    </main>
+    
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
-        <p>&copy; 2025 Blissful Memories Photography. All rights reserved.</p>
-        <p>Ronish Neupane: Creator and owner of this website</p>
+        &copy; 2025 Blissful Memories Photography. All rights reserved.
     </footer>
 
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="code/script.js"></script>
 </body>
-
 </html>

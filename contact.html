@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Blissful Memories Photography</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .contact-info {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        .contact-info i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .contact-form label {
+            font-weight: 600;
+        }
+        .about-us {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blissful Memories</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html" >Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html" >Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html" >Skills</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html" >Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center lead">We’d love to hear from you! Reach out with your queries, bookings, or feedback.</p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h2>Send Us a Message</h2>
+                <form action="/submit_contact" method="post" class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-6">
+                <h2>Get in Touch</h2>
+                <div class="contact-info">
+                    <p><i class="bi bi-geo-alt"></i> <strong>Address:</strong> Baneshowar, Kathmandu, Nepal</p>
+                    <p><i class="bi bi-telephone"></i> <strong>Phone:</strong> +977 9888888880</p>
+                    <p><i class="bi bi-envelope"></i> <strong>Email:</strong> swronim@gmail.com</p>
+                    <p><i class="bi bi-clock"></i> <strong>Business Hours:</strong> Mon - Fri: 9 AM - 6 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <section class="mt-5 about-us">
+            <h2>About Us</h2>
+            <p>
+                Blissful Memories Photography is dedicated to capturing the essence of life’s most cherished moments.
+                Whether it’s a wedding, a family gathering, or a corporate event, our team combines passion and expertise to create
+                timeless photographs that tell your story. Let us help you turn your memories into art.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        &copy; 2025 Blissful Memories Photography. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

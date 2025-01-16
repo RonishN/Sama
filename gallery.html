@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Blissful Memories Photography</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional Styles for Photo Gallery */
+        .photo-container {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .photo-container img:hover {
+            transform: scale(1.1);
+        }
+        .photo-info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            display: none;
+        }
+        .photo-container:hover .photo-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Blissful Memories</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html" >Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="gallery.html" >Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html" >Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html" >Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center">Photo Gallery</h1>
+        <p class="text-center lead">Browse through some of the most memorable moments captured by our talented photographers.</p>
+
+        <div class="row">
+            <!-- Photo 1 -->
+            <div class="col-md-4 photo-container">
+                <img src="images/baw01.png" alt="Photo 1">
+                <div class="photo-info">
+                    Photographer: Salon Thapa<br>
+                    Location: bhaktapur,Nepal<br>
+                    Time: June 2023
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="col-md-4 photo-container">
+                <img src="images/baw02.png" alt="Photo 2">
+                <div class="photo-info">
+                    Photographer: Savya Shaha<br>
+                    Location: lokanthali, Nepal<br>
+                    Time: April 2023
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="col-md-4 photo-container">
+                <img src="images/baw03.png" alt="Photo 3">
+                <div class="photo-info">
+                    Photographer: Sarita Shrestha<br>
+                    Location: Ratnapark,Nepal<br>
+                    Time: December 2022
+                </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="col-md-4 photo-container">
+                <img src="images/baw04.png" alt="Photo 4">
+                <div class="photo-info">
+                    Photographer: Shirshak Arayal<br>
+                    Location: Kathmandu, Nepal<br>
+                    Time: January 2024
+                </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="col-md-4 photo-container">
+                <img src="images/nature02.png" alt="Photo 5">
+                <div class="photo-info">
+                    Photographer: Ram KC<br>
+                    Location: Dolkha, Nepal<br>
+                    Time: Ashar 23 
+                </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="col-md-4 photo-container">
+                <img src="images/nature03.png" alt="Photo 6">
+                <div class="photo-info">
+                    Photographer: Swornim Tamang<br>
+                    Location: Lokanthali,Nepal<br>
+                    Time: May 2023
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        &copy; 2025 Blissful Memories Photography. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
